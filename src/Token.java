@@ -69,7 +69,7 @@ public class Token {
     public static Token receive(DatagramSocket s) throws IOException {
         byte[] buf = new byte[max_buffer_size];
         DatagramPacket packet = new DatagramPacket(buf, buf.length);
-        s.receive(packet);
+        s.receive(packet);  //Will hier ein "packet" bekommen und wartet solange
         String rc_json = new String(packet.getData(),0,packet.getLength(), StandardCharsets.UTF_8);
         System.out.printf("Received %s from %s:%d\n", rc_json, packet.getAddress().getHostAddress(), packet.getPort());
         return fromJSON(rc_json);

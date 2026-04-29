@@ -1,0 +1,35 @@
+Afg 2
+
+Kenne Niemanden aus dem Modul.
+
+
+Afg 3
+
+zu 1) Die Datei "TokenRingUDP.jar" via Git Bash starten zu wollen liefert:
+
+$ java -jar TokenRingUDP.jar
+Exception in thread "main" java.lang.UnsupportedClassVersionError: TokenRing has been compiled by a more recent version of the Java Runtime (class
+file version 68.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(Unknown Source)
+        at java.security.SecureClassLoader.defineClass(Unknown Source)
+        at java.net.URLClassLoader.defineClass(Unknown Source)
+        at java.net.URLClassLoader.access$100(Unknown Source)
+        at java.net.URLClassLoader$1.run(Unknown Source)
+        at java.net.URLClassLoader$1.run(Unknown Source)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(Unknown Source)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+
+In IntelliJ funktioniert es, doch ich weiß nicht ob und wenn wie ich dort eine zweite Instanz öffnen kann um auf einem Rechner zu kommunizieren. Soweit ich das zu
+verstehen meine, stoppt das Programm nach Starten von "TokenRing.java" in "Token.java" in Zeile 72 "s.receive(packet);" und verharrt dort, da es auf ein eingehendes
+Paket wartet.
+TL;DR Habe es nicht zum laufen bekommen.
+
+
+zu 2) (siehe Afg 2)
+
+Habe alternativ www.google.de angepingt und dieses rausgefiltert.
